@@ -17,4 +17,4 @@ passport.use(User.createStrategy())
 passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 
-mongoose.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema)
